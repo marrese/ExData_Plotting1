@@ -1,6 +1,6 @@
 setwd("~/EDA")
 hpc <- read.table("~/EDA/household_power_consumption.txt", sep=";",dec=".", na.strings="?",header=TRUE)
-str(hpc)
+
 hpc$Date=as.Date(hpc$Date,"%d/%m/%Y")
 
 #subsetting data to the 2 required  days
